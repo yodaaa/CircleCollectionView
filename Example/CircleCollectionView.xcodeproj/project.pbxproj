@@ -14,6 +14,9 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		D56F69C0217C42A400C12F65 /* CreateCollectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56F69BF217C42A400C12F65 /* CreateCollectionList.swift */; };
+		D56F69C3217C42CD00C12F65 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56F69C1217C42CD00C12F65 /* CustomCell.swift */; };
+		D56F69C4217C42CD00C12F65 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D56F69C2217C42CD00C12F65 /* CustomCell.xib */; };
 		DDAB7CE3D43B95467D45D051 /* Pods_CircleCollectionView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBC37A9C8BAAE3E84FA2116 /* Pods_CircleCollectionView_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +32,7 @@
 
 /* Begin PBXFileReference section */
 		1E8D26454EC0D6C4DF5D20F0 /* Pods_CircleCollectionView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircleCollectionView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EC94187A04D96E96BC7BA1E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1EC94187A04D96E96BC7BA1E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3DC2492368CB5AD97E742BDA /* Pods-CircleCollectionView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCollectionView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCollectionView_Example/Pods-CircleCollectionView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CircleCollectionView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleCollectionView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,11 +44,14 @@
 		607FACE51AFB9204008FA782 /* CircleCollectionView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleCollectionView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		954AE3DC333FC7BCE1944D10 /* CircleCollectionView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CircleCollectionView.podspec; path = ../CircleCollectionView.podspec; sourceTree = "<group>"; };
+		954AE3DC333FC7BCE1944D10 /* CircleCollectionView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CircleCollectionView.podspec; path = ../CircleCollectionView.podspec; sourceTree = "<group>"; };
 		98B01194053CC6F51C14DF62 /* Pods-CircleCollectionView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCollectionView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCollectionView_Example/Pods-CircleCollectionView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9D952882FEE73D63F8B1D8A3 /* Pods-CircleCollectionView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCollectionView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCollectionView_Tests/Pods-CircleCollectionView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A87DFF7F5CE20F0ED4B8C8B0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A87DFF7F5CE20F0ED4B8C8B0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		ACBC37A9C8BAAE3E84FA2116 /* Pods_CircleCollectionView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircleCollectionView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56F69BF217C42A400C12F65 /* CreateCollectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCollectionList.swift; sourceTree = "<group>"; };
+		D56F69C1217C42CD00C12F65 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		D56F69C2217C42CD00C12F65 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		DC5BA178D702361B0E478CB6 /* Pods-CircleCollectionView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCollectionView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCollectionView_Tests/Pods-CircleCollectionView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +114,9 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				D56F69BF217C42A400C12F65 /* CreateCollectionList.swift */,
+				D56F69C1217C42CD00C12F65 /* CustomCell.swift */,
+				D56F69C2217C42CD00C12F65 /* CustomCell.xib */,
 			);
 			name = "Example for CircleCollectionView";
 			path = CircleCollectionView;
@@ -247,6 +256,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				D56F69C4217C42CD00C12F65 /* CustomCell.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +334,8 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				D56F69C3217C42CD00C12F65 /* CustomCell.swift in Sources */,
+				D56F69C0217C42A400C12F65 /* CreateCollectionList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
