@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CircleCollectionView_Example' do
+  pod 'CircleCollectionView', :path => '../'
+
+  target 'CircleCollectionView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
