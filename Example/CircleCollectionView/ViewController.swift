@@ -12,22 +12,25 @@ import CircleCollectionView
 class ViewController: UIViewController ,UICollectionViewDataSource, UICollectionViewDelegate{
     
     @IBOutlet weak var collectionview: UICollectionView!
+    //let list = ["image_icon", "aaaaaaa"]
     let list = CollectionList.CreateCollectionList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        //CreateCollectionView(collectionview, list)
         collectionview.delegate = self
         collectionview.dataSource = self
+        collectionview.collectionViewLayout = CustomLayout()
         collectionview.register(UINib(nibName: "CustomCell", bundle: nil), forCellWithReuseIdentifier: "CustomCell")
-        //      collectionview.frame.size.width = UIScreen.main.bounds.size.width
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 80, height: 100)
         layout.scrollDirection = .horizontal
         layout.sectionInset = UIEdgeInsets(top: 0.0, left: 10.0, bottom: 0.0, right: 20.0)
         collectionview.collectionViewLayout = layout
         
-        
+        //--- グラデーション ---
         let startColor = UIColor(red:163/255, green:61/255, blue:161/255, alpha:1)
         let endColor = UIColor(red:242/255, green:176/255, blue:95/255, alpha:1)
         let gradientColors: [CGColor] = [startColor.cgColor, endColor.cgColor]
@@ -35,9 +38,15 @@ class ViewController: UIViewController ,UICollectionViewDataSource, UICollection
         gradientLayer.startPoint = CGPoint(x: 1, y: 0)
         gradientLayer.endPoint = CGPoint(x: 0, y: 1)
         gradientLayer.colors = gradientColors
-        
         gradientLayer.frame = CGRect(x: 0 , y: 300, width: 100, height: 100)
+        
+        let circleLayer = CAShapeLayer.init()
+        let circleFrame = CGRect.init(x: 40, y: 180, width: 100, height: 100)
+        circleLayer.frame = circleFrame
+        circleLayer.path = UIBezierPath.init(ovalIn: CGRect.init(x: 0, y: 0, width: circleFrame.size.width, height: circleFrame.size.height)).cgPath
+       
         self.view.layer.insertSublayer(gradientLayer, at: 0)
+        //--------------------
         
     }
     
@@ -81,7 +90,6 @@ class ViewController: UIViewController ,UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath[1])
-        
     }
     
     override func didReceiveMemoryWarning() {
